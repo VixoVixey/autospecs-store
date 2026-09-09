@@ -28,16 +28,19 @@ Base modular para la tienda de repuestos y componentes mecánicos de alto rendim
 ![Búsqueda Interactiva](./public/screenshots/screenshot-search.png)
 
 ## Instrucciones para Ejecutar Localmente
+
 1. Clonar el repositorio:
-   \`\`\`bash
-   git clone <URL_DE_TU_REPOSITORIO>
-   cd autospecs-store
-   \`\`\`
+```bash
+git clone https://github.com/VixoVixey/autospecs-store.git
+cd autospecs-store
+```
+
 2. Instalar dependencias:
-   \`\`\`bash
-   npm install
-   \`\`\`
+```bash
+npm install
+```
+
 3. Levantar entorno de desarrollo:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+```bash
+npm run dev
+```
