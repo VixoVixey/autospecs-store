@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Intercooler Frontal Mishimoto",
+        "price": 289990,
+        "category": "Motor",
+        "image": "https://nitrous.cl/wp-content/uploads/2021/11/Mishimoto-MMINT-UZ-510x510.png"
+    },
+    {
+        "id": 2,
+        "name": "ECU Programable FuelTech FT450",
+        "price": 890000,
+        "category": "Electrónica",
+        "image": "https://wwrturbo.shop/cdn/shop/files/3.jpg?v=1746076386&width=1445"
+    },
+    {
+        "id": 3,
+        "name": "Embrague Cerámico Stage 2",
+        "price": 340000,
+        "category": "Transmisión",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_957266-MLC74479489958_022024-O.webp"
+    },
+    {
+        "id": 4,
+        "name": "Bielas Forjadas Eagle H-Beam 144mm",
+        "price": 420000,
+        "category": "Motor",
+        "image": "https://ueeshop.ly200-cdn.com/u_file/UPAX/UPAX710/2404/23/products/2622348785.jpg?x-oss-process=image/format,webp/quality,q_100/resize,m_lfit,h_1000,w_1000"
+    },
+    {
+        "id": 5,
+        "name": "Inyectores Bosch EV14 1000cc",
+        "price": 260000,
+        "category": "Electrónica",
+        "image": "https://strperformance.com/48899-large_default/pack-4-inyectores-alto-caudal-bosch-1000cc-18-turbo-20vt-motor-audi-s3-a3-tt-golf-4-ideal-desde-400cv-y-e85.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Short Shifter Regulable 5 Velocidades",
+        "price": 85000,
+        "category": "Transmisión",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_838792-CBT102497325882_122025-O.webp"
+    }
+]
