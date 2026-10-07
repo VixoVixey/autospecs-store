@@ -1,19 +1,19 @@
 import ProductCard from "./ProductCard";
 
-export default function ProductList({ products, onSelectProduct }) {
-    if (products.length === 0) {
-        return <p className="empty-msg">No se encontraron piezas o componentes coincidentes.</p>;
-    }
-
+export default function ProductList({ products }) {
+  if (products.length === 0) {
     return (
-        <section className="product-grid">
-            {products.map((item) => (
-                <ProductCard
-                key={item.id}
-                product={item}
-                onSelectProduct={onSelectProduct}
-                />
-            ))}
-        </section>
+      <div className="empty-state">
+        <p>No se encontraron productos que coincidan con la búsqueda.</p>
+      </div>
     );
+  }
+
+  return (
+    <section className="products-grid">
+      {products.map((item) => (
+        <ProductCard key={item.id} product={item} />
+      ))}
+    </section>
+  );
 }

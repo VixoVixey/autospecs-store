@@ -1,37 +1,47 @@
-# AutoSpecs Motorsport - E-commerce Components en React
+# AutoSpecs Store - E-commerce con Consumo de API en React
 
-> Módulo 2: Desarrollo de Interfaces Dinámicas con React — IPSS
+> Módulo 2: Desarrollo de Interfaces Dinámicas con React — Evaluación 2
 
 ## Descripción del Proyecto
-Base modular para la tienda de repuestos y componentes mecánicos de alto rendimiento. Desarrollado con React funcional y Vite, aplicando arquitectura de componentes reutilizables, paso de datos mediante props y manejo de estado local.
+Aplicación interactiva de comercio electrónico construida en React con Vite. Implementa consumo asíncrono de datos desde una API externa (DummyJSON), renderizado de catálogo dinámico, barra de búsqueda en tiempo real, interfaz responsiva y gestión robusta de estados de carga y error.
 
-## Componentes Custom Creados
-1. **Header:** Muestra el isotipo, nombre de la tienda y slogan descriptivo mediante props.
-2. **SearchBar:** Componente con input controlado conectado a un estado padre para filtrado en vivo.
-3. **Button:** Botón configurable mediante variantes (`primary`, `secondary`) y eventos `onClick`.
-4. **ProductCard:** Tarjeta individual que recibe los datos de cada producto vía props y despacha acciones.
-5. **ProductList:** Contenedor que itera la colección con `.map()` implementando claves únicas (`key`).
-6. **Footer:** Sección de cierre con información de copyright y año dinámico.
+## Componentes Creados
+1. **Header:** Encabezado con isotipo y título de la tienda.
+2. **SearchBar:** Input controlado que filtra productos en tiempo real por coincidencia de texto.
+3. **ProductCard:** Tarjeta individual que consume datos de producto vía props (título, precio, miniatura, categoría y puntuación).
+4. **ProductList:** Contenedor responsivo en grid que itera colecciones con `.map()` usando claves únicas (`key`).
+5. **Loader:** Indicador visual animado (spinner) mostrado durante la obtención asíncrona de datos.
+6. **ErrorMessage:** Contenedor de visualización de errores de red o API con botón de reintento.
+7. **Footer:** Pie de página con información institucional y derechos.
 
 ## Tecnologías Utilizadas
-- **React 18 / 19**
+- **React 18 / 19** (con hooks `useState` y `useEffect`)
 - **Vite**
 - **JavaScript ES6+**
-- **CSS3 Flexbox / Grid**
+- **Fetch API**
+- **CSS3 Grid y Flexbox**
+
+## Consumo de API y Manejo de Estados
+- **Endpoint:** `https://dummyjson.com/products`
+- **Estados gestionados:**
+  - `loading`: Controla la visualización del componente `Loader` antes de recibir la respuesta.
+  - `error`: Captura fallos de conectividad o respuestas HTTP no exitosas desplegando `ErrorMessage`.
+  - `products`: Almacena el array de productos obtenido desde la API.
+  - `searchTerm`: Estado del input controlado para el filtrado en vivo.
 
 ## Capturas de Pantalla
 
 ### Vista General
-![Vista General](./public/screenshots/screenshot-general.png)
+![Vista General](public/screenshots/screenshot-general.PNG)
 
-### Búsqueda y Selección Interactiva
-![Búsqueda Interactiva](./public/screenshots/screenshot-search.png)
+### Búsqueda en Tiempo Real
+![Búsqueda Interactiva](public/screenshots/screenshot-search.PNG)
 
 ## Instrucciones para Ejecutar Localmente
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/VixoVixey/autospecs-store.git
+git clone [https://github.com/VixoVixey/autospecs-store.git](https://github.com/VixoVixey/autospecs-store.git)
 cd autospecs-store
 ```
 
@@ -40,7 +50,7 @@ cd autospecs-store
 npm install
 ```
 
-3. Levantar entorno de desarrollo:
+3. Iniciar el servidor local:
 ```bash
 npm run dev
 ```

@@ -1,21 +1,17 @@
-import Button from "./Button";
-
-export default function ProductCard({ product, onSelectProduct }) {
-    const { name, price, category, image } = product;
+export default function ProductCArd({ product }) {
+    const { title, price, category, thumbnail, rating } = product;
 
     return (
         <article className="product-card">
-            <div className="card-image-wrapper">
-                <img src={image} alt={name} loading="lazy" />
-                <span className="card-badge">{category}</span>
+            <div className="card-thumb">
+                <img src={thumbnail} alt={title} loading="lazy" />
+                <span className="category-pill">{category}</span>
             </div>
-            <div className="card-body">
-                <h3 className="card-title">{name}</h3>
-                <p className="card-price">${price.toLocaleString("es-CL")}</p>
-                <div className="card-actions">
-                    <Button variant="primary" onClick={() => onSelectProduct(product)}>
-                        Ver detalle
-                    </Button>
+            <div className="card-info">
+                <h3 className="card-title">{title}</h3>
+                <div className="class-meta">
+                    <span className="rating">⭐ {rating}</span>
+                    <span className="price">${price.toLocaleString("en-US")}</span>
                 </div>
             </div>
         </article>

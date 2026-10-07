@@ -1,12 +1,12 @@
-export default function Header({ storeName, slogan }) {
+export default function Header({ title = "AutoSpecs Store", subtitle }) {
     return (
         <header className="site-header">
-            <div className="header-content">
-                <div className="logo-container">
-                    <span className="logo-icon">⚙️</span>
-                    <h1>{storeName}</h1>
+            <div className="header-container">
+                <div className="brand">
+                    <span className="brand-icon">⚡</span>
+                    <h1>{title}</h1>
                 </div>
-                <p className="slogan">{slogan}</p>
+                {subtitle && <p className="header-subtitle">{subtitle}</p>}
             </div>
         </header>
     );

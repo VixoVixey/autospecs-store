@@ -1,7 +1,7 @@
-export default function Footer({ storeName, year }) {
-    return (
-        <footer className="site-footer">
-            <p>© {year} {storeName} — Base E-commerce React (Módulo 2 IPSS).</p>
-        </footer>
-    );
+export default function Footer({ storeName = "AutoSpecs Store", year = 2026 }) {
+  return (
+    <footer className="site-footer">
+      <p>© {year} {storeName} — Evaluación 2: Consumo de APIs en React.</p>
+    </footer>
+  );
 }
