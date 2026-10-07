@@ -32,10 +32,10 @@ Aplicación interactiva de comercio electrónico construida en React con Vite. I
 ## Capturas de Pantalla
 
 ### Vista General
-![Vista General](public/screenshots/screenshot-general.png)
+![Vista General](./public/screenshots/screenshot-general.png)
 
-### Búsqueda en Tiempo Real
-![Búsqueda Interactiva](public/screenshots/screenshot-search.png)
+### Búsqueda y Selección Interactiva
+![Búsqueda Interactiva](./public/screenshots/screenshot-search.png)
 
 ## Instrucciones para Ejecutar Localmente
 
